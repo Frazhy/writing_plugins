@@ -25,3 +25,6 @@ target_link_libraries(my_gazebo_plugin ${GAZEBO_LIBRARIES})
 
 add_library(world_plugin SHARED src/world_plugin.cc)
 target_link_libraries(world_plugin ${GAZEBO_LIBRARIES})
+
+add_library(my_model_plugin SHARED src/my_model_plugin.cc)
+target_link_libraries(my_model_plugin ${GAZEBO_LIBRARIES})
