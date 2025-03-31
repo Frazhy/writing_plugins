@@ -22,3 +22,6 @@ list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 
 add_library(my_gazebo_plugin SHARED src/my_gazebo_plugin.cc)
 target_link_libraries(my_gazebo_plugin ${GAZEBO_LIBRARIES})
+
+add_library(world_plugin SHARED src/world_plugin.cc)
+target_link_libraries(world_plugin ${GAZEBO_LIBRARIES})

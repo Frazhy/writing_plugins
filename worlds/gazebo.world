@@ -1,6 +1,16 @@
 <?xml version="1.0"?>
 <sdf version="1.4">
   <world name="default">
-    <plugin name="my_gazebo_plugin" filename="libmy_gazebo_plugin.so"/>
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <plugin name="world_plugin" filename="libworld_plugin.so"/>
   </world>
 </sdf>
